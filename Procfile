@@ -1,1 +1,1 @@
-web: java -jar target/jqurantree-1.0.0.jar
+web: java -cp jqurantree-1.0.0.jar org.quran.tree.Launcher
