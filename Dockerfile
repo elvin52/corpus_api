@@ -1,9 +1,5 @@
-# Use a lightweight Java runtime
-FROM eclipse-temurin:17-jre-alpine
+FROM eclipse-temurin:17-jre
 WORKDIR /app
-
-# Copy the JAR file
 COPY jqurantree-1.0.0.jar .
-
-# Run the application
-CMD ["java", "-jar", "jqurantree-1.0.0.jar"]
+# Replace with your actual main class
+CMD ["java", "-cp", "jqurantree-1.0.0.jar", "com.example.MainClass"] 
